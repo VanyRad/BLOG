@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой блог</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #posts-list {
+            margin-bottom: 20px;
+        }
+        .post {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        #post-form {
+            max-width: 400px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Мой блог</h1>
+
+    <div id="post-form">
+        <h2>Создание/редактирование поста</h2>
+        <input type="text" id="post-title" placeholder="Заголовок">
+        <textarea id="post-content" placeholder="Текст поста"></textarea>
+        <button id="save-post">Сохранить</button>
+    </div>
+
+   
+    <h2>Общий список постов</h2>
+    <div id="posts-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
